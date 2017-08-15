@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,user-scalable=no" name="viewport">
+    <!--禁止将数字变为电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <!--iphone设备中的safari私有meta标签 允许全屏模式浏览，隐藏浏览器导航栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--iphone中safari顶端的状态条的样式 默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>移动web-触屏轮播图</title>
+    <link rel="stylesheet" href="./css/Slide.css">
+</head>
+
+<body>
+    <div class="con">
+        <div class="banner SlideWrapper">
+            <ul id="banner-con" class="Slide SlideTransition" style="transition-duration:0.2s;transform: translateX(-0px);">
+                <li class="Slide_img banner-pic1"> </li>
+                <li class="Slide_img banner-pic2"> </li>
+                <li class="Slide_img banner-pic3"> </li>
+            </ul>
+        </div>
+        <div style="margin: 10px;">
+            <div class="container bb">
+                这里是内容</br>
+                这里是内容</br>
+                这里是内容</br>
+                这里是内容</br>
+                这里是内容</br>
+                这里是内容</br>
+                这里是内容</br>
+                这里是内容</br>
+                这里是内容</br>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script> 
+    <!--<script type="text/javascript" src="./js/common/jquery-3.2.1.js"></script>-->
+    <script type="text/javascript" src="./js/mobile-slider.js"></script>
+    <script>
+        $(function () {
+            // 文档就绪
+            console.log("ready in index!");
+        });
+    </script>
+</body>
+</html>

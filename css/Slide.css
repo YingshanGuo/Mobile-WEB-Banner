@@ -1,0 +1,100 @@
+
+/*字体大小是页面默认大小的100%，即16像素*/
+body{font-size:62.5%;font-family:"Microsoft YaHei",Arial; overflow-x:hidden; overflow-y:auto;margin: 0;padding: 0;} 
+.bb{
+	border:1px solid black;
+}
+.container{
+	width: 100%;
+    height: 100%;
+	margin-top: 0.5rem;
+}
+/*banner样板*/
+.banner{
+	border:1px solid #ccc;
+    position: relative; overflow: auto;
+}
+.banner ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.banner ul li{
+    height: 6rem;
+    width: 33.3%;
+    display: block; 
+    cursor: pointer; 
+    float: left;cursor: pointer;
+}
+.banner-pic1{
+    background: url(../img/q51.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.banner-pic2{
+    background: url(../img/q55.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.banner-pic3{
+    background: url(../img/q52.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+/*slide*/
+.SlideWrapper{
+    width: 100%;
+    height: 6rem;
+    position: relative;
+    overflow: hidden;
+}
+ /* for Chrome */
+.SlideWrapper::-webkit-scrollbar {
+    display: none;
+}
+.Slide{
+    width: 400%;
+    height: 100%;
+    font-size: 0;
+    position: absolute;
+    -webkit-transform:translate3d(0,0,0);
+}
+.SlideTransition{
+    -webkit-transition: all 0.5s 0s ease-in-out;
+}
+.Slide_img{
+    width: 100%;
+    height: 6rem;
+}
+/*自适应*/
+html {font-size : 20px;}
+@media only screen and (max-width: 401px){    
+    html {font-size: 20px !important;}
+}
+@media only screen and (min-width: 401px){    
+    html {font-size: 20px !important;}
+}
+@media only screen and (min-width: 428px){    
+    html {font-size: 20px !important}
+}
+@media only screen and (min-width: 481px){    
+    html {font-size: 20px !important;}
+    .banner ul li{
+        height: 5rem;
+    }
+}
+@media only screen and (min-width: 569px){    
+    html {font-size: 20px !important;}
+}
+@media only screen and (min-width: 641px){    
+    html {font-size: 20px !important;}
+    .banner ul li{
+        height: 8rem;
+    }
+    .con{
+        max-width: 548px;
+        margin: 0 auto;
+    }
+}
